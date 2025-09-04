@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="WDD231 Course Home Page — projects, course list, and resources." />
+  <meta name="author" content="Your Name" />
+  <title>WDD231 — Course Home Page</title>
+
+  <!-- Google Font (one family), kept lightweight -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS (required order) -->
+  <link href="css/small.css" rel="stylesheet">
+  <link href="css/larger.css" rel="stylesheet">
+
+  <!-- JS (deferred) -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <!-- Lightweight inline SVG logo -->
+        <svg class="logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <circle cx="24" cy="24" r="22" fill="#2243d6"></circle>
+          <path d="M16 26l6 6 12-14" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="site-title">WDD231 • Godfred Sefa Aboagye</span>
+      </div>
+
+      <button id="menuButton" class="menu-button" aria-expanded="false" aria-controls="primaryNav">
+        <span class="visually-hidden">Menu</span>
+        <!-- simple icon -->
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+
+      <nav id="primaryNav" class="nav" aria-label="Primary">
+        <ul>
+          <li><a href="./" data-route="home" aria-current="page">Home</a></li>
+          <li><a href="chamber/" data-route="chamber">Chamber</a></li>
+          <li><a href="final/" data-route="final">Final</a></li>
+          <li><a href="https://github.com/gskaboagye/wdd231" target="_blank" rel="noopener">Repository</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <h1>Home</h1>
+
+    <!-- 3 sections per rubric -->
+    <section class="card" aria-labelledby="about-heading">
+      <h2 id="about-heading">About This Course</h2>
+      <p>
+        Welcome! This page showcases the WDD231 prerequisites: semantic HTML, responsive CSS, and progressive enhancement with JavaScript.
+        Use the navigation to explore other projects as they’re added.
+      </p>
+      <ul class="bullets">
+        <li>Responsive navigation with wayfinding</li>
+        <li>Accessible, semantic markup (no frameworks)</li>
+        <li>Dynamic course list with filters and credits</li>
+      </ul>
+    </section>
+
+    <section class="card" aria-labelledby="cert-heading">
+      <div class="section-header">
+        <h2 id="cert-heading">Web & Computer Programming Certificate Courses</h2>
+        <div class="filters" role="group" aria-label="Course filters">
+          <button class="chip is-active" id="filterAll" data-filter="ALL">All</button>
+          <button class="chip" id="filterWDD" data-filter="WDD">WDD</button>
+          <button class="chip" id="filterCSE" data-filter="CSE">CSE</button>
+        </div>
+      </div>
+
+      <div id="coursesGrid" class="grid" aria-live="polite"></div>
+
+      <div class="totals">
+        <output id="creditsTotal" aria-live="polite" aria-atomic="true">Total Credits: 0</output>
+      </div>
+
+      <p class="note">Courses you’ve completed are visually highlighted.</p>
+    </section>
+
+    <section class="card" aria-labelledby="tools-heading">
+      <h2 id="tools-heading">Tools & Links</h2>
+      <div class="links-grid">
+        <a class="tool" href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a>
+        <a class="tool" href="https://web.dev/measure/" target="_blank" rel="noopener">Lighthouse</a>
+        <a class="tool" href="https://fonts.google.com/" target="_blank" rel="noopener">Google Fonts</a>
+        <a class="tool" href="https://validator.w3.org/" target="_blank" rel="noopener">HTML Validator</a>
+        <a class="tool" href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener">CSS Validator</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h2 class="visually-hidden">Social</h2>
+        <ul class="social">
+          <li><a href="https://github.com/your-github-username" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/your-linkedin/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+
+      <div class="legal">
+        <p>
+          &copy; <span id="year"></span> • Godfred Sefa Aboagye • Ghana/Accra
+        </p>
+        <p id="lastModified" aria-live="polite"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

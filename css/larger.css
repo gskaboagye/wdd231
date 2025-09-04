@@ -1,0 +1,43 @@
+/* Larger view: 64rem ~= 1024px (required separate file with media query) */
+@media (min-width: 64rem){
+  .header-inner{padding:1rem 0}
+  .menu-button{display:none}
+
+  .nav{display:block}
+  .nav ul{
+    display:flex;gap:.5rem;background:transparent;border:none;padding:0;margin:0
+  }
+  .nav a{padding:.5rem .75rem}
+  .nav a:hover{background:#ffffff1a}
+
+  /* Layout not single-column in large view */
+  main.wrap{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    gap:1rem;
+    align-items:start;
+  }
+
+  /* Make the three sections form a 2+1 layout:
+     - First two stack in left column
+     - Tools card sits in right column
+   */
+  main.wrap > .card:nth-of-type(1),
+  main.wrap > .card:nth-of-type(2){
+    grid-column:1;
+  }
+  main.wrap > .card:nth-of-type(3){
+    grid-column:2;
+    position:sticky; top:6.5rem;
+  }
+
+  /* Courses grid denser on wide screens */
+  .grid{
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    gap:1rem;
+  }
+
+  .links-grid{
+    grid-template-columns: 1fr;
+  }
+}
