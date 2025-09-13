@@ -3,45 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Chamber of Commerce Directory Page">
+  <meta name="description" content="Accra Chamber of Commerce Directory">
   <meta name="author" content="Godfred Sefa Aboagye">
-  <meta property="og:title" content="Chamber of Commerce Directory">
-  <meta property="og:description" content="Explore our chamber members directory.">
-  <meta property="og:image" content="images/chamber-preview.png">
+  <meta property="og:title" content="Accra Chamber of Commerce Directory">
+  <meta property="og:description" content="Explore Accra businesses and organizations in the chamber directory.">
+  <meta property="og:image" content="images/logo.png">
   <meta property="og:url" content="https://your-github-username.github.io/wdd231/chamber/directory.html">
-  <title>Chamber Directory</title>
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script defer src="js/script.js"></script>
+  <title>Accra Chamber of Commerce Directory</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header>
-    <div class="logo">My Chamber</div>
-    <button id="menu-toggle">☰</button>
+    <img src="images/logo.png" alt="Accra Chamber Logo" class="logo">
     <nav>
-      <ul>
+      <button id="menuBtn">☰</button>
+      <ul id="navMenu">
         <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
         <li><a href="directory.html" class="active">Directory</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="join.html">Join</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h1>Member Directory</h1>
-    <div class="view-buttons">
-      <button id="grid-view">Grid View</button>
-      <button id="list-view">List View</button>
+    <h1>Business Directory</h1>
+    <div class="view-toggle">
+      <button id="gridBtn">Grid View</button>
+      <button id="listBtn">List View</button>
     </div>
-    <div id="members-container" class="grid-view"></div>
+    <section id="members" class="grid-view"></section>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> My Chamber | WDD 231 Project</p>
-    <p>Developed by Godfred Sefa Aboagye</p>
-    <p>Last Modified: <span id="lastModified"></span></p>
+    <p>&copy; <span id="year"></span> Accra Chamber of Commerce</p>
+    <p>Contact: info@accrachamber.org | +233 30 123 4567</p>
+    <p>WDD 231 | <span id="lastModified"></span> | By Godfred Sefa Aboagye</p>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
