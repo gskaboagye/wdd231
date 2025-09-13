@@ -22,13 +22,13 @@ function displayMembers(members) {
   container.innerHTML = '';
   members.forEach(member => {
     // Use default.png if member.image is missing
-    const imgSrc = `images/${member.image || "default.png"}`;
+    const imgSrc = `images/${member.image || "default.jpg"}`;
 
     if (container.classList.contains('grid-view')) {
       container.innerHTML += `
         <div class="member-card">
           <img src="${imgSrc}" alt="${member.name}" 
-               onerror="this.onerror=null;this.src='images/default.png';">
+               onerror="this.onerror=null;this.src='images/default.jpg';">
           <h3>${member.name}</h3>
           <p>${member.address}</p>
           <p>${member.phone}</p>
