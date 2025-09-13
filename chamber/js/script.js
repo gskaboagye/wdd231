@@ -21,7 +21,7 @@ function displayMembers(members) {
   const container = document.getElementById('members');
   container.innerHTML = '';
   members.forEach(member => {
-    // Use default.png if member.image is missing
+    // Use default.jpg if member.image is missing
     const imgSrc = `images/${member.image || "default.jpg"}`;
 
     if (container.classList.contains('grid-view')) {
