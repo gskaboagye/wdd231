@@ -1,47 +1,39 @@
-const membersContainer = document.getElementById('members');
-const gridBtn = document.getElementById('grid-view');
-const listBtn = document.getElementById('list-view');
-
-// Fetch data
-async function fetchMembers() {
+async function loadMembers() {
   const response = await fetch('data/members.json');
-  const data = await response.json();
-  displayMembers(data);
-}
+  const members = await response.json();
+  const container = document.getElementById('members-container');
 
-function displayMembers(members) {
-  membersContainer.innerHTML = '';
+  container.innerHTML = '';
   members.forEach(member => {
     const card = document.createElement('div');
-    card.classList.add('card');
-
+    card.classList.add('member-card');
     card.innerHTML = `
-      <img src="images/${member.image}" alt="${member.name} logo">
-      <h3>${member.name}</h3>
+      <img src="images/${member.image}" alt="${member.name}">
+      <h2>${member.name}</h2>
       <p>${member.address}</p>
       <p>${member.phone}</p>
-      <a href="${member.website}" target="_blank">Visit Website</a>
-      <p>Membership Level: ${["Member", "Silver", "Gold"][member.membership - 1]}</p>
+      <a href="${member.website}" target="_blank">${member.website}</a>
+      <p>Membership: ${member.membership}</p>
     `;
-
-    membersContainer.appendChild(card);
+    container.appendChild(card);
   });
 }
 
-// Toggle views
-gridBtn.addEventListener('click', () => {
-  membersContainer.classList.add('grid');
-  membersContainer.classList.remove('list');
+document.getElementById('grid-view').addEventListener('click', () => {
+  document.getElementById('members-container').classList.add('grid-view');
+  document.getElementById('members-container').classList.remove('list-view');
 });
 
-listBtn.addEventListener('click', () => {
-  membersContainer.classList.add('list');
-  membersContainer.classList.remove('grid');
+document.getElementById('list-view').addEventListener('click', () => {
+  document.getElementById('members-container').classList.add('list-view');
+  document.getElementById('members-container').classList.remove('grid-view');
 });
 
-// Footer dates
+document.getElementById('menu-toggle').addEventListener('click', () => {
+  document.querySelector('nav ul').classList.toggle('show');
+});
+
 document.getElementById('year').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = document.lastModified;
 
-// Init
-fetchMembers();
+loadMembers();

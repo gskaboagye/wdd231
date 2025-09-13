@@ -1,58 +1,9 @@
 [
-  {
-    "name": "Sahara Books",
-    "address": "123 Library Road",
-    "phone": "123-456-7890",
-    "website": "https://saharabooks.tmb",
-    "image": "sahara-books.png",
-    "membership": 3
-  },
-  {
-    "name": "Desert Cafe",
-    "address": "456 Coffee St",
-    "phone": "321-654-0987",
-    "website": "https://desertcafe.tmb",
-    "image": "desert-cafe.png",
-    "membership": 2
-  },
-  {
-    "name": "Timbuktu Bank",
-    "address": "789 Finance Ave",
-    "phone": "234-567-8901",
-    "website": "https://timbuktubank.tmb",
-    "image": "timbuktu-bank.png",
-    "membership": 1
-  },
-  {
-    "name": "Nomad Tech",
-    "address": "101 Startup Blvd",
-    "phone": "987-654-3210",
-    "website": "https://nomadtech.tmb",
-    "image": "nomad-tech.png",
-    "membership": 3
-  },
-  {
-    "name": "Camel Rides Inc.",
-    "address": "202 Desert Trail",
-    "phone": "456-789-1230",
-    "website": "https://camelrides.tmb",
-    "image": "camel-rides.png",
-    "membership": 2
-  },
-  {
-    "name": "Oasis Spa",
-    "address": "303 Palm Lane",
-    "phone": "654-321-0987",
-    "website": "https://oasisspa.tmb",
-    "image": "oasis-spa.png",
-    "membership": 1
-  },
-  {
-    "name": "Timbuktu Tours",
-    "address": "404 Explorer Rd",
-    "phone": "789-012-3456",
-    "website": "https://timbuktutours.tmb",
-    "image": "timbuktu-tours.png",
-    "membership": 2
-  }
+  {"name": "Tech Solutions", "address": "123 Main St, City", "phone": "555-1234", "website": "https://techsolutions.com", "image": "tech.png", "membership": "Gold"},
+  {"name": "Green Foods", "address": "45 Market Rd, City", "phone": "555-5678", "website": "https://greenfoods.com", "image": "green.png", "membership": "Silver"},
+  {"name": "BuildSmart", "address": "789 Industrial Ave, City", "phone": "555-8765", "website": "https://buildsmart.com", "image": "build.png", "membership": "Member"},
+  {"name": "Health Plus", "address": "12 Wellness Blvd, City", "phone": "555-2468", "website": "https://healthplus.com", "image": "health.png", "membership": "Gold"},
+  {"name": "Travel Express", "address": "98 Airport Rd, City", "phone": "555-1357", "website": "https://travelexpress.com", "image": "travel.png", "membership": "Silver"},
+  {"name": "EduWorld", "address": "67 College St, City", "phone": "555-9753", "website": "https://eduworld.com", "image": "edu.png", "membership": "Gold"},
+  {"name": "Fashion Hub", "address": "34 Style Ln, City", "phone": "555-8642", "website": "https://fashionhub.com", "image": "fashion.png", "membership": "Member"}
 ]
