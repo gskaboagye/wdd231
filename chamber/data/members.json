@@ -5,7 +5,7 @@
       "address": "123 High St, Accra",
       "phone": "+233 20 111 2222",
       "website": "https://accracoffee.com",
-      "/image": "coffee.png",
+      "image": "images/coffee.png",
       "membership": "Gold"
     },
     {
@@ -13,7 +13,7 @@
       "address": "45 Ring Rd, Accra",
       "phone": "+233 55 333 4444",
       "website": "https://kwametech.com",
-      "image": "tech.png",
+      "image": "images/tech.png",
       "membership": "Silver"
     },
     {
@@ -21,7 +21,7 @@
       "address": "78 Market Rd, Accra",
       "phone": "+233 24 555 6666",
       "website": "https://accrafoods.com",
-      "image": "foods.png",
+      "image": "images/foods.png",
       "membership": "Member"
     },
     {
@@ -29,7 +29,7 @@
       "address": "12 Independence Ave, Accra",
       "phone": "+233 30 777 8888",
       "website": "https://unitybank.com",
-      "image": "bank.png",
+      "image": "images/bank.png",
       "membership": "Gold"
     },
     {
@@ -37,7 +37,7 @@
       "address": "9 Castle Rd, Accra",
       "phone": "+233 27 999 0000",
       "website": "https://heritagetours.com",
-      "image": "tours.png",
+      "image": "images/tours.png",
       "membership": "Silver"
     },
     {
@@ -45,7 +45,7 @@
       "address": "34 Gym St, Accra",
       "phone": "+233 26 112 2333",
       "website": "https://accrafitness.com",
-      "image": "fitness.png",
+      "image": "images/fitness.png",
       "membership": "Member"
     },
     {
@@ -53,7 +53,7 @@
       "address": "21 Broadcast Ave, Accra",
       "phone": "+233 55 223 3344",
       "website": "https://sunrisemedia.com",
-      "image": "media.png",
+      "image": "images/media.png",
       "membership": "Gold"
     }
   ]
