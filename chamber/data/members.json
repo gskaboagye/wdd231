@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Sahara Books",
+    "address": "123 Library Road",
+    "phone": "123-456-7890",
+    "website": "https://saharabooks.tmb",
+    "image": "sahara-books.png",
+    "membership": 3
+  },
+  {
+    "name": "Desert Cafe",
+    "address": "456 Coffee St",
+    "phone": "321-654-0987",
+    "website": "https://desertcafe.tmb",
+    "image": "desert-cafe.png",
+    "membership": 2
+  },
+  {
+    "name": "Timbuktu Bank",
+    "address": "789 Finance Ave",
+    "phone": "234-567-8901",
+    "website": "https://timbuktubank.tmb",
+    "image": "timbuktu-bank.png",
+    "membership": 1
+  },
+  {
+    "name": "Nomad Tech",
+    "address": "101 Startup Blvd",
+    "phone": "987-654-3210",
+    "website": "https://nomadtech.tmb",
+    "image": "nomad-tech.png",
+    "membership": 3
+  },
+  {
+    "name": "Camel Rides Inc.",
+    "address": "202 Desert Trail",
+    "phone": "456-789-1230",
+    "website": "https://camelrides.tmb",
+    "image": "camel-rides.png",
+    "membership": 2
+  },
+  {
+    "name": "Oasis Spa",
+    "address": "303 Palm Lane",
+    "phone": "654-321-0987",
+    "website": "https://oasisspa.tmb",
+    "image": "oasis-spa.png",
+    "membership": 1
+  },
+  {
+    "name": "Timbuktu Tours",
+    "address": "404 Explorer Rd",
+    "phone": "789-012-3456",
+    "website": "https://timbuktutours.tmb",
+    "image": "timbuktu-tours.png",
+    "membership": 2
+  }
+]
