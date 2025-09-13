@@ -5,7 +5,7 @@
       "address": "123 High St, Accra",
       "phone": "+233 20 111 2222",
       "website": "https://accracoffee.com",
-      "image": "image/coffee.png",
+      "/image": "coffee.png",
       "membership": "Gold"
     },
     {
