@@ -1,6 +1,6 @@
 const apiKey = "YOUR_API_KEY"; // Replace with OpenWeatherMap API Key
 const city = "Accra"; // Change to your chamber city
-const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
+const url = `http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid={API key}`;
 
 async function getWeather() {
   try {
