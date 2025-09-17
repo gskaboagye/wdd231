@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Sefa Tees",
+    "logo": "spotlight1.png",
+    "phone": "123-456-7890",
+    "address": "Accra, Ghana",
+    "website": "https://sefatees.com",
+    "membership": "Gold"
+  },
+  {
+    "name": "TechWorld",
+    "logo": "spotlight2.png",
+    "phone": "987-654-3210",
+    "address": "Kumasi, Ghana",
+    "website": "https://techworld.com",
+    "membership": "Silver"
+  },
+  {
+    "name": "Foodies Hub",
+    "logo": "spotlight3.png",
+    "phone": "111-222-3333",
+    "address": "Takoradi, Ghana",
+    "website": "https://foodieshub.com",
+    "membership": "Bronze"
+  }
+]
