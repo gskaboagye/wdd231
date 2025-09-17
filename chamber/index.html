@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Welcome to the Chamber of Commerce Home Page" />
+  <title>Chamber of Commerce | Home</title>
+  <link rel="stylesheet" href="styles/chamber.css" />
+  <script defer src="scripts/weather.js"></script>
+  <script defer src="scripts/spotlight.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="images/logo.png" alt="Chamber Logo" class="logo" />
+      <h1>My Town Chamber of Commerce</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="images/hero.jpg" alt="City Hero" />
+      <div class="hero-text">
+        <h2>Building Business Together</h2>
+        <a href="#" class="cta">Join the Chamber</a>
+      </div>
+    </section>
+
+    <!-- Current Events -->
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li>📅 Business Networking Night - Sept 25</li>
+        <li>📅 Chamber Breakfast - Oct 3</li>
+        <li>📅 Annual Gala - Nov 15</li>
+      </ul>
+    </section>
+
+    <!-- Weather Section -->
+    <section class="weather">
+      <h2>Local Weather</h2>
+      <p id="current-temp">Loading temperature...</p>
+      <p id="current-desc"></p>
+      <div id="forecast"></div>
+    </section>
+
+    <!-- Company Spotlights -->
+    <section class="spotlights">
+      <h2>Member Spotlights</h2>
+      <div class="spotlight-container" id="spotlight-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> My Town Chamber of Commerce</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
