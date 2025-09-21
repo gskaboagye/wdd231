@@ -1,26 +1,19 @@
 [
   {
-    "name": "Sefa Tees",
-    "logo": "spotlight1.png",
-    "phone": "123-456-7890",
-    "address": "Accra, Ghana",
-    "website": "https://sefatees.com",
+    "name": "Accra Shoes Ltd",
+    "logo": "accra-shoes.png",
+    "address": "123 High Street, Accra",
+    "phone": "+233 30 123 4567",
+    "website": "https://accrashoes.com",
     "membership": "Gold"
   },
   {
-    "name": "TechWorld",
-    "logo": "spotlight2.png",
-    "phone": "987-654-3210",
-    "address": "Kumasi, Ghana",
-    "website": "https://techworld.com",
+    "name": "Silver Steps",
+    "logo": "silver-steps.png",
+    "address": "Pentecost University",
+    "phone": "+233 20 987 6543",
+    "website": "https://silversteps.com",
     "membership": "Silver"
-  },
-  {
-    "name": "Foodies Hub",
-    "logo": "spotlight3.png",
-    "phone": "111-222-3333",
-    "address": "Takoradi, Ghana",
-    "website": "https://foodieshub.com",
-    "membership": "Bronze"
   }
 ]
+

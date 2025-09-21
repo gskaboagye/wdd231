@@ -1,4 +1,4 @@
-/* General Reset */
+/* General Reset */ 
 * {
   margin: 0;
   padding: 0;
@@ -34,38 +34,80 @@ header {
   transform: rotate(10deg) scale(1.1);
 }
 
+/* Navigation */
+nav {
+  position: relative;
+}
+
+#menu {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none; /* hidden on desktop */
+}
+
 nav ul {
   display: flex;
   list-style: none;
 }
+
 nav li {
   margin: 0 1rem;
 }
+
 nav a {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease, border-bottom 0.3s ease;
 }
+
 nav a:hover,
 nav a.active {
   color: #ffcc00;
   border-bottom: 2px solid #ffcc00;
 }
-#menuBtn {
-  display: none;
+
+/* Small screen nav */
+@media (max-width: 699px) {
+  #menu {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #004080;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 0 0 8px 8px;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  nav li {
+    margin: 0.5rem 0;
+  }
 }
 
 /* Hero Section */
 .hero {
   position: relative;
   text-align: center;
+  overflow: hidden;
 }
 
-.hero img {
+.hero-img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 60vh;
+  object-fit: cover;
 }
 
 .hero-text {
@@ -77,17 +119,24 @@ nav a.active {
   background: rgba(0, 0, 0, 0.5);
   padding: 1rem 2rem;
   border-radius: 8px;
+  max-width: 90%;
+}
+
+.hero-text h2 {
+  font-size: 1.5rem;
 }
 
 .cta {
   display: inline-block;
   margin-top: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   background: #ffcc00;
   color: #000;
   font-weight: bold;
   text-decoration: none;
   border-radius: 5px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
 }
 
 .cta:hover {
@@ -103,7 +152,7 @@ main section {
 
 h2 {
   margin-bottom: 1rem;
-  color: #d6d8d8;
+  color: #004080; /* darker, better contrast */
 }
 
 .events ul {
@@ -190,7 +239,7 @@ footer {
   margin-top: 2rem;
 }
 
-/* Responsive Layout */
+/* Desktop adjustments */
 @media (min-width: 700px) {
   nav ul {
     justify-content: flex-end;
@@ -202,5 +251,9 @@ footer {
 
   .hero-text h2 {
     font-size: 2rem;
+  }
+
+  .cta {
+    font-size: 1.1rem;
   }
 }

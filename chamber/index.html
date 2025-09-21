@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -15,8 +15,11 @@
       <img src="images/logo.png" alt="Chamber Logo" class="logo" />
       <h1>My Town Chamber of Commerce</h1>
     </div>
+
+    <!-- Responsive Navigation -->
     <nav>
-      <ul>
+      <button id="menu" aria-label="Menu">☰</button>
+      <ul id="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="directory.html">Directory</a></li>
         <li><a href="#">Join</a></li>
@@ -28,7 +31,7 @@
   <main>
     <!-- Hero Section -->
     <section class="hero">
-      <img src="images/hero.jpg" alt="City Hero" />
+      <img src="images/hero.jpg" alt="City Hero" class="hero-img" />
       <div class="hero-text">
         <h2>Building Business Together</h2>
         <a href="#" class="cta">Join the Chamber</a>
@@ -62,13 +65,18 @@
 
   <footer>
     <p>&copy; <span id="year"></span> My Town Chamber of Commerce</p>
-
     <p>Contact: info@accrachamber.org | +233 30 123 4567</p>
     <p>WDD 231 | <span id="lastModified"></span> | By Godfred Sefa Aboagye</p>
   </footer>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+
+    // Nav toggle
+    document.getElementById("menu").addEventListener("click", () => {
+      document.getElementById("nav-links").classList.toggle("open");
+    });
   </script>
 </body>
 </html>
