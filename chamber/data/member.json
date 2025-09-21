@@ -1,19 +1,60 @@
-[
-  {
-    "name": "Accra Shoes Ltd",
-    "logo": "accra-shoes.png",
-    "address": "123 High Street, Accra",
-    "phone": "+233 30 123 4567",
-    "website": "https://accrashoes.com",
-    "membership": "Gold"
-  },
-  {
-    "name": "Silver Steps",
-    "logo": "silver-steps.png",
-    "address": "Pentecost University",
-    "phone": "+233 20 987 6543",
-    "website": "https://silversteps.com",
-    "membership": "Silver"
-  }
-]
-
+{
+  "members": [
+    {
+      "name": "Accra Coffee Co.",
+      "address": "123 High St, Accra",
+      "phone": "+233 20 111 2222",
+      "website": "https://accracoffee.com",
+      "image": "images/coffee.jpg",
+      "membership": "Gold"
+    },
+    {
+      "name": "Kwame Tech Ltd",
+      "address": "45 Ring Rd, Accra",
+      "phone": "+233 55 333 4444",
+      "website": "https://kwametech.com",
+      "image": "images/tech.jpg",
+      "membership": "Silver"
+    },
+    {
+      "name": "Accra Foods",
+      "address": "78 Market Rd, Accra",
+      "phone": "+233 24 555 6666",
+      "website": "https://accrafoods.com",
+      "image": "images/foods.jpg",
+      "membership": "Member"
+    },
+    {
+      "name": "Unity Bank",
+      "address": "12 Independence Ave, Accra",
+      "phone": "+233 30 777 8888",
+      "website": "https://unitybank.com",
+      "image": "images/bank.jpg",
+      "membership": "Gold"
+    },
+    {
+      "name": "Heritage Tours",
+      "address": "9 Castle Rd, Accra",
+      "phone": "+233 27 999 0000",
+      "website": "https://heritagetours.com",
+      "image": "images/tours.jpg",
+      "membership": "Silver"
+    },
+    {
+      "name": "Accra Fitness",
+      "address": "34 Gym St, Accra",
+      "phone": "+233 26 112 2333",
+      "website": "https://accrafitness.com",
+      "image": "images/fitness.jpg",
+      "membership": "Member"
+    },
+    {
+      "name": "Sunrise Media",
+      "address": "21 Broadcast Ave, Accra",
+      "phone": "+233 55 223 3344",
+      "website": "https://sunrisemedia.com",
+      "image": "images/media.jpg",
+      "membership": "Gold"
+    }
+  ]
+}
