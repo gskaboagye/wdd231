@@ -1,0 +1,226 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamber Membership Join</title>
+  <link rel="stylesheet" href="styles/chamber.css">
+  <script defer src="scripts/chamber.js"></script>
+  <style>
+    /* Basic layout */
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f7f7f7; color: #333; }
+    header, nav, footer { background-color: #003366; color: #fff; padding: 1em; text-align: center; }
+    nav a { color: #fff; text-decoration: none; margin: 0 1em; transition: color 0.3s ease; }
+    nav a:hover { color: #ffd700; }
+    main { display: flex; flex-wrap: wrap; justify-content: center; padding: 2em; gap: 2em; }
+    
+    /* Form styles */
+    form { 
+      flex: 1 1 350px; 
+      background: #fff; 
+      padding: 2em; 
+      border-radius: 10px; 
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+      opacity: 0; 
+      transform: translateY(50px);
+      animation: fadeInUp 1s forwards;
+    }
+    label { display: block; margin-bottom: 0.5em; font-weight: bold; }
+    input, textarea, select { 
+      width: 100%; 
+      margin-bottom: 1em; 
+      padding: 0.7em; 
+      border-radius: 5px; 
+      border: 1px solid #ccc; 
+      transition: border-color 0.3s, box-shadow 0.3s; 
+    }
+    input:focus, textarea:focus, select:focus { 
+      border-color: #003366; 
+      box-shadow: 0 0 5px rgba(0, 51, 102, 0.5); 
+      outline: none; 
+    }
+    input[type="submit"] { 
+      background: #003366; 
+      color: #fff; 
+      border: none; 
+      cursor: pointer; 
+      transition: background 0.3s, transform 0.3s; 
+    }
+    input[type="submit"]:hover { 
+      background: #0055aa; 
+      transform: scale(1.05); 
+    }
+
+    /* Membership cards */
+    .membership-cards { 
+      display: flex; flex-wrap: wrap; gap: 1em; 
+      flex: 1 1 350px; 
+      justify-content: center;
+    }
+    .card { 
+      border: 1px solid #ccc; 
+      padding: 1.5em; 
+      text-align: center; 
+      cursor: pointer; 
+      border-radius: 10px; 
+      background: #fff; 
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+      transition: transform 0.5s ease, background 0.3s, box-shadow 0.3s; 
+      opacity: 0; 
+      animation: fadeInUp 1s forwards;
+    }
+    .card:hover { 
+      transform: scale(1.05); 
+      background: #f0f8ff; 
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2); 
+    }
+    /* Staggered card animations */
+    .card:nth-child(1) { animation-delay: 0.2s; }
+    .card:nth-child(2) { animation-delay: 0.4s; }
+    .card:nth-child(3) { animation-delay: 0.6s; }
+    .card:nth-child(4) { animation-delay: 0.8s; }
+
+    /* Modal styles */
+    dialog { 
+      border: none; 
+      padding: 2em; 
+      border-radius: 10px; 
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
+      max-width: 400px; 
+      width: 90%; 
+      text-align: center;
+    }
+    dialog button.close { 
+      margin-top: 1em; 
+      padding: 0.5em 1em; 
+      border: none; 
+      background: #003366; 
+      color: #fff; 
+      border-radius: 5px; 
+      cursor: pointer; 
+      transition: background 0.3s; 
+    }
+    dialog button.close:hover { background: #0055aa; }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Chamber of Commerce</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a> | 
+    <a href="join.html">Join</a> | 
+    <a href="events.html">Events</a>
+  </nav>
+  <main>
+    <!-- Membership Application Form -->
+    <form method="get" action="thankyou.html">
+      <label>
+        First Name:
+        <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name" required>
+      </label>
+      <label>
+        Last Name:
+        <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+      </label>
+      <label>
+        Organizational Title:
+        <input type="text" name="orgTitle" title="Enter your organizational title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
+      </label>
+      <label>
+        Email:
+        <input type="email" name="email" title="Enter your email address" autocomplete="email" placeholder="example@example.com" required>
+      </label>
+      <label>
+        Mobile Phone:
+        <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+      </label>
+      <label>
+        Business/Organization Name:
+        <input type="text" name="businessName" title="Enter your business or organization name" autocomplete="organization" required>
+      </label>
+      <label>
+        Membership Level:
+        <select name="membershipLevel" title="Select your membership level">
+          <option value="np">NP Membership (Non-Profit)</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
+        </select>
+      </label>
+      <label>
+        Business Description:
+        <textarea name="businessDesc" title="Describe your business or organization"></textarea>
+      </label>
+      <input type="hidden" name="timestamp" id="timestamp">
+      <input type="submit" value="Submit Application">
+    </form>
+
+    <!-- Membership Level Cards -->
+    <div class="membership-cards">
+      <div class="card" data-modal="modal-np">NP Membership Info</div>
+      <div class="card" data-modal="modal-bronze">Bronze Membership Info</div>
+      <div class="card" data-modal="modal-silver">Silver Membership Info</div>
+      <div class="card" data-modal="modal-gold">Gold Membership Info</div>
+    </div>
+
+    <!-- Modals -->
+    <dialog id="modal-np">
+      <h3>NP Membership Benefits</h3>
+      <p>Free membership for non-profits. Includes access to events and newsletters.</p>
+      <button class="close">Close</button>
+    </dialog>
+
+    <dialog id="modal-bronze">
+      <h3>Bronze Membership Benefits</h3>
+      <p>Access to monthly networking events, newsletter, and basic advertising.</p>
+      <button class="close">Close</button>
+    </dialog>
+
+    <dialog id="modal-silver">
+      <h3>Silver Membership Benefits</h3>
+      <p>All Bronze benefits plus training workshops and discounted event tickets.</p>
+      <button class="close">Close</button>
+    </dialog>
+
+    <dialog id="modal-gold">
+      <h3>Gold Membership Benefits</h3>
+      <p>All Silver benefits plus premium advertising, spotlight features, and exclusive networking.</p>
+      <button class="close">Close</button>
+    </dialog>
+  </main>
+
+  <footer>
+    &copy; 2025 Chamber of Commerce
+    <p>Contact: info@accrachamber.org | +233 30 123 4567</p>
+    <p>WDD 231 | <span id="lastModified"></span> | By Godfred Sefa Aboagye</p>
+  </footer>
+
+  <script>
+    // Set last modified
+    document.getElementById("lastModified").textContent = document.lastModified;
+
+    // Set current timestamp for hidden input
+    document.getElementById('timestamp').value = new Date().toISOString();
+
+    // Modal functionality
+    const cards = document.querySelectorAll('.card');
+    const modals = document.querySelectorAll('dialog');
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        const modalId = card.dataset.modal;
+        document.getElementById(modalId).showModal();
+      });
+    });
+    modals.forEach(modal => {
+      modal.querySelector('.close').addEventListener('click', () => modal.close());
+    });
+  </script>
+</body>
+</html>

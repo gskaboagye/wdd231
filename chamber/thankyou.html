@@ -1,0 +1,121 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You - Chamber Membership</title>
+  <link rel="stylesheet" href="styles/chamber.css">
+  <style>
+    /* Basic layout */
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      padding: 0; 
+      background: #f7f7f7; 
+      color: #333; 
+    }
+    header, nav, footer { 
+      background-color: #003366; 
+      color: #fff; 
+      padding: 1em; 
+      text-align: center; 
+    }
+    nav a { 
+      color: #fff; 
+      text-decoration: none; 
+      margin: 0 1em; 
+      transition: color 0.3s ease; 
+    }
+    nav a:hover { color: #ffd700; }
+
+    main { 
+      padding: 2em; 
+      display: flex; 
+      justify-content: center; 
+    }
+
+    .submitted-info { 
+      border: 1px solid #ccc; 
+      padding: 2em; 
+      max-width: 600px; 
+      background: #fff; 
+      border-radius: 10px; 
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+      opacity: 0; 
+      transform: translateY(50px); 
+      animation: fadeInUp 1s forwards;
+    }
+    .submitted-info h2 { 
+      color: #003366; 
+      margin-bottom: 1em; 
+      text-align: center;
+    }
+    .submitted-info p { 
+      margin: 0.5em 0; 
+      font-size: 1rem;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Highlight text animation for dynamic feel */
+    .highlight {
+      display: inline-block;
+      transition: transform 0.3s, color 0.3s;
+    }
+    .highlight:hover {
+      transform: scale(1.05);
+      color: #0055aa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Chamber of Commerce</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a> | 
+    <a href="join.html">Join</a> | 
+    <a href="events.html">Events</a>
+  </nav>
+  <main>
+    <div class="submitted-info">
+      <h2>Thank You for Your Application!</h2>
+      <p>Your membership application has been received. Here are the details you submitted:</p>
+      <p><strong>First Name:</strong> <span class="highlight" id="firstName"></span></p>
+      <p><strong>Last Name:</strong> <span class="highlight" id="lastName"></span></p>
+      <p><strong>Email:</strong> <span class="highlight" id="email"></span></p>
+      <p><strong>Mobile Phone:</strong> <span class="highlight" id="phone"></span></p>
+      <p><strong>Business/Organization Name:</strong> <span class="highlight" id="businessName"></span></p>
+      <p><strong>Application Timestamp:</strong> <span class="highlight" id="timestamp"></span></p>
+    </div>
+  </main>
+  <footer>
+    &copy; 2025 Chamber of Commerce
+    <p>Contact: info@accrachamber.org | +233 30 123 4567</p>
+    <p>WDD 231 | <span id="lastModified"></span> | By Godfred Sefa Aboagye</p>
+  </footer>
+
+  <script>
+    // Set last modified date
+    document.getElementById("lastModified").textContent = document.lastModified;
+
+    // Function to get query parameters from URL
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param) || '';
+    }
+
+    // Populate the page with submitted form values
+    document.getElementById('firstName').textContent = getQueryParam('firstName');
+    document.getElementById('lastName').textContent = getQueryParam('lastName');
+    document.getElementById('email').textContent = getQueryParam('email');
+    document.getElementById('phone').textContent = getQueryParam('phone');
+    document.getElementById('businessName').textContent = getQueryParam('businessName');
+    document.getElementById('timestamp').textContent = getQueryParam('timestamp');
+  </script>
+</body>
+</html>
