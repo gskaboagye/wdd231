@@ -1,0 +1,29 @@
+{
+  "places": [
+    {
+      "name": "Aburi Botanical Gardens",
+      "description": "A beautiful and peaceful garden filled with rare tropical plants and towering trees.",
+      "image": "images/aburi.jpg"
+    },
+    {
+      "name": "Boti Waterfalls",
+      "description": "A twin waterfall surrounded by lush green vegetation and scenic hiking trails.",
+      "image": "images/boti-falls.jpg"
+    },
+    {
+      "name": "Kakum National Park",
+      "description": "Famous for its canopy walkway suspended high above the rainforest floor.",
+      "image": "images/kakum.jpg"
+    },
+    {
+      "name": "Elmina Castle",
+      "description": "A historical fort representing the early colonial era and transatlantic history.",
+      "image": "images/elmina.jpg"
+    },
+    {
+      "name": "Cape Coast Beach",
+      "description": "A popular spot for relaxation with golden sands and calm ocean waves.",
+      "image": "images/capebeach.jpg"
+    }
+  ]
+}

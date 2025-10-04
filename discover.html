@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover page showing places, people, and culture with lazy-loaded images and JSON data." />
+  <title>Discover | Chamber of Commerce</title>
+  <link rel="stylesheet" href="css/discover.css" />
+  <script defer src="scripts/discover.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Discover Our Community</h1>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html" class="active">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="visit-info">
+      <h2>Welcome!</h2>
+      <p id="visit-message"></p>
+    </section>
+
+    <section class="gallery-section">
+      <h2>Discover Amazing Places</h2>
+      <div id="discover-gallery" class="gallery-grid"></div>
+    </section>
+
+    <section class="stats-section">
+      <h2>Community Quick Facts</h2>
+      <ul class="stats-list">
+        <li><strong>Population:</strong> 52,000</li>
+        <li><strong>Founded:</strong> 1874</li>
+        <li><strong>Main Industry:</strong> Cocoa & Tourism</li>
+        <li><strong>Average Temperature:</strong> 28°C</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Chamber of Commerce | Last Visit: <span id="last-visit"></span></p>
+    <p>WDD 231| 
+    | By Godfred Sefa Aboagye</p>
+  </footer>
+</body>
+</html>
