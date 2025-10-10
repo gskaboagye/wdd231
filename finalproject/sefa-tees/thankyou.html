@@ -7,10 +7,24 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+  <!-- Header (matches other pages) -->
   <header class="site-header">
     <div class="container header-inner">
-      <img src="images/logo.png" alt="Sefa Tees Logo" class="logo">
-      <h1 class="brand-title">Sefa Tees</h1>
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="Sefa Tees logo" class="logo" />
+        
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">☰</button>
+
+      <nav id="primary-nav" class="nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="attributions.html" aria-current="page">Attributions</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
