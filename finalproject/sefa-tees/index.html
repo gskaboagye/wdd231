@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Sefa Tees — quality custom t-shirts. Shop local, customize, and express yourself." />
+  <meta name="author" content="Godfred Sefa Aboagye" />
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Sefa Tees — Custom T-Shirts" />
+  <meta property="og:description" content="Sefa Tees — quality, locally made t-shirts. Shop or design your own." />
+  <meta property="og:image" content="images/logo.webp" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script type="module" src="scripts/main.js" defer></script>
+
+  <title>Sefa Tees — Home</title>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.webp" alt="Sefa Tees logo" class="logo" />
+        <span class="brand-title">Sefa Tees</span>
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">☰</button>
+
+      <nav id="primary-nav" class="nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero fade-in">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 id="greeting">Wear your story — quality tees made locally</h1>
+          <p>Bold designs, soft fabrics, and ethical production. Customize or pick a ready-to-wear favorite.</p>
+          <p><a href="shop.html" class="btn primary">Shop Now</a></p>
+        </div>
+        <figure class="hero-figure">
+          <img src="images/hero.jpg" alt="Selection of Sefa Tees t-shirts" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features container fade-in">
+      <h2>Why Sefa Tees?</h2>
+      <div class="cards">
+        <article class="card fade-in">
+          <h3>Premium Cotton</h3>
+          <p>Breathable, durable, and comfortable — shirts you'll wear again and again.</p>
+        </article>
+        <article class="card fade-in">
+          <h3>Local Production</h3>
+          <p>Made locally with sustainable practices that support artisans in the community.</p>
+        </article>
+        <article class="card fade-in">
+          <h3>Custom Options</h3>
+          <p>Upload your design or pick from our curated collections.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Random Tip Section -->
+    <section class="promo container fade-in">
+      <h2>Style Tip of the Day</h2>
+      <p id="tip">Loading tip...</p>
+    </section>
+  </main>
+<footer class="site-footer fade-up">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+        <a href="attributions.html">Attributions</a>
+      </div>
+      <p>&copy; <span id="year"></span> Sefa Tees | Crafted with ❤️ by Sefa</p>
+      <p id="datetime"></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    function updateDateTime() {
+      const now = new Date();
+      document.getElementById("datetime").textContent = now.toLocaleString();
+    }
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+
+    const menuBtn = document.querySelector(".menu-toggle");
+    const nav = document.getElementById("primary-nav");
+    menuBtn.addEventListener("click", () => {
+      const expanded = menuBtn.getAttribute("aria-expanded") === "true";
+      menuBtn.setAttribute("aria-expanded", !expanded);
+      nav.classList.toggle("show");
+    });
+  </script>
+</body>
+</html>

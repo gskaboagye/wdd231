@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Contact Sefa Tees for custom orders, inquiries, or feedback." />
+  <meta name="author" content="Godfred Sefa Aboagye" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script type="module" src="scripts/contact.js" defer></script>
+  <title>Contact — Sefa Tees</title>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.webp" alt="Sefa Tees Logo" class="logo">
+        <span>Sefa Tees</span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">☰</button>
+      <nav id="primary-nav" class="nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container fade-in">
+    <section class="contact-hero slide-in-top">
+      <h1>Get in Touch</h1>
+      <p class="tagline">We’d love to hear from you! Fill out the form below and we’ll respond soon.</p>
+    </section>
+
+    <section class="contact-section fade-up">
+      <form id="contactForm" action="thankyou.html" method="GET" novalidate>
+        <div class="form-group">
+          <input type="text" id="name" name="name" required placeholder=" ">
+          <label for="name">Full Name</label>
+          <span class="error-message" id="nameError"></span>
+        </div>
+
+        <div class="form-group">
+          <input type="email" id="email" name="email" required placeholder=" ">
+          <label for="email">Email Address</label>
+          <span class="error-message" id="emailError"></span>
+        </div>
+
+        <div class="form-group">
+          <textarea id="message" name="message" rows="6" required placeholder=" "></textarea>
+          <label for="message">Your Message</label>
+          <span class="error-message" id="messageError"></span>
+        </div>
+
+        <button type="submit" class="btn">📩 Send Message</button>
+      </form>
+
+      <div class="contact-info bounce-in">
+        <h2>Contact Info</h2>
+        <p><strong>Email:</strong> support@sefatees.com</p>
+        <p><strong>Phone:</strong> +233 24 123 4567</p>
+        <p><strong>Location:</strong> Accra, Ghana</p>
+
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">🌐</a>
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer fade-up">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+        <a href="attributions.html">Attributions</a>
+      </div>
+      <p>&copy; <span id="year"></span> Sefa Tees | Crafted with ❤️ by Sefa</p>
+      <p id="datetime"></p>
+    </div>
+  </footer>
+
+  <script>
+    // Footer date and time
+    document.getElementById("year").textContent = new Date().getFullYear();
+    function updateDateTime() {
+      const now = new Date();
+      document.getElementById("datetime").textContent = now.toLocaleString();
+    }
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+
+    // Mobile nav
+    const menuBtn = document.querySelector(".menu-toggle");
+    const nav = document.getElementById("primary-nav");
+    menuBtn.addEventListener("click", () => {
+      const expanded = menuBtn.getAttribute("aria-expanded") === "true";
+      menuBtn.setAttribute("aria-expanded", !expanded);
+      nav.classList.toggle("show");
+    });
+  </script>
+</body>
+</html>

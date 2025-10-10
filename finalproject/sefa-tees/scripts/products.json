@@ -1,0 +1,168 @@
+
+[
+  {
+    "id": 1,
+    "name": "Classic Black Tee",
+    "price": 35,
+    "color": "Black",
+    "size": "M",
+    "sku": "ST-001",
+    "stock": 12,
+    "image": "images/shirts/a.jpg",
+    "description": "Soft cotton classic black tee."
+  },
+  {
+    "id": 2,
+    "name": "White Logo Tee",
+    "price": 33,
+    "color": "White",
+    "size": "L",
+    "sku": "ST-002",
+    "stock": 20,
+    "image": "images/shirts/shirt2.webp",
+    "description": "Minimal logo on chest."
+  },
+  {
+    "id": 3,
+    "name": "Retro Red Tee",
+    "price": 38,
+    "color": "Red",
+    "size": "M",
+    "sku": "ST-003",
+    "stock": 6,
+    "image": "images/shirts/shirt3.webp",
+    "description": "Bold retro print."
+  },
+  {
+    "id": 4,
+    "name": "Ocean Blue Tee",
+    "price": 36,
+    "color": "Blue",
+    "size": "S",
+    "sku": "ST-004",
+    "stock": 15,
+    "image": "images/shirts/shirt4.webp",
+    "description": "Cool blue tones."
+  },
+  {
+    "id": 5,
+    "name": "Forest Green Tee",
+    "price": 37,
+    "color": "Green",
+    "size": "L",
+    "sku": "ST-005",
+    "stock": 8,
+    "image": "images/shirts/shirt5.webp",
+    "description": "Earthy green tee."
+  },
+  {
+    "id": 6,
+    "name": "Sunset Orange Tee",
+    "price": 34,
+    "color": "Orange",
+    "size": "M",
+    "sku": "ST-006",
+    "stock": 10,
+    "image": "images/shirts/shirt6.webp",
+    "description": "Warm colorway."
+  },
+  {
+    "id": 7,
+    "name": "Heather Grey Tee",
+    "price": 32,
+    "color": "Gray",
+    "size": "XL",
+    "sku": "ST-007",
+    "stock": 18,
+    "image": "images/shirts/shirt7.webp",
+    "description": "Soft heather fabric."
+  },
+  {
+    "id": 8,
+    "name": "Vintage Black Tee",
+    "price": 40,
+    "color": "Black",
+    "size": "L",
+    "sku": "ST-008",
+    "stock": 5,
+    "image": "images/shirts/shirt8.webp",
+    "description": "Premium vintage wash."
+  },
+  {
+    "id": 9,
+    "name": "Sky Blue Stripe",
+    "price": 39,
+    "color": "Blue",
+    "size": "M",
+    "sku": "ST-009",
+    "stock": 7,
+    "image": "images/shirts/shirt9.webp",
+    "description": "Striped design."
+  },
+  {
+    "id": 10,
+    "name": "Minimal White Tee",
+    "price": 30,
+    "color": "White",
+    "size": "S",
+    "sku": "ST-010",
+    "stock": 22,
+    "image": "images/shirts/shirt10.webp",
+    "description": "Clean minimalist style."
+  },
+  {
+    "id": 11,
+    "name": "Printed Art Tee",
+    "price": 45,
+    "color": "Multicolor",
+    "size": "M",
+    "sku": "ST-011",
+    "stock": 4,
+    "image": "images/shirts/shirt11.webp",
+    "description": "Limited run artist print."
+  },
+  {
+    "id": 12,
+    "name": "Fleet Navy Tee",
+    "price": 36,
+    "color": "Navy",
+    "size": "L",
+    "sku": "ST-012",
+    "stock": 11,
+    "image": "images/shirts/shirt12.webp",
+    "description": "Deep navy tee."
+  },
+  {
+    "id": 13,
+    "name": "Bold Yellow Tee",
+    "price": 35,
+    "color": "Yellow",
+    "size": "M",
+    "sku": "ST-013",
+    "stock": 9,
+    "image": "images/shirts/shirt13.webp",
+    "description": "Standout color."
+  },
+  {
+    "id": 14,
+    "name": "Olive Performance Tee",
+    "price": 42,
+    "color": "Olive",
+    "size": "L",
+    "sku": "ST-014",
+    "stock": 6,
+    "image": "images/shirts/shirt14.webp",
+    "description": "Performance fabric."
+  },
+  {
+    "id": 15,
+    "name": "Charcoal Longline",
+    "price": 48,
+    "color": "Charcoal",
+    "size": "XL",
+    "sku": "ST-015",
+    "stock": 3,
+    "image": "images/shirts/shirt15.webp",
+    "description": "Longline fit, modern cut."
+  }
+]

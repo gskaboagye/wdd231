@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Attributions for images, icons, and resources used on Sefa Tees." />
+  <meta name="author" content="Godfred Sefa A. (Sefa Tees)" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <!-- If you use main.js on other pages, include it so functionality is consistent -->
+  <script type="module" src="scripts/main.js" defer></script>
+  <title>Attributions — Sefa Tees</title>
+</head>
+<body>
+  <!-- Header (matches other pages) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.webp" alt="Sefa Tees logo" class="logo" />
+        <span class="brand-title">Sefa Tees</span>
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">☰</button>
+
+      <nav id="primary-nav" class="nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="attributions.html" aria-current="page">Attributions</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content (uses the same container + animation classes) -->
+  <main class="container fade-in">
+    <section class="attributions-card">
+      <h1>Attributions</h1>
+      <p>Thank you to the creators of the resources used while building Sefa Tees. Replace any placeholder assets with your own before publishing.</p>
+
+      <ul class="attribution-list">
+        <li>
+          <strong>Photography:</strong>
+          Images used as placeholders — Unsplash contributors (please credit individual photographers where required).
+        </li>
+        <li>
+          <strong>Icons:</strong>
+          Icons from Lucide (or substitute with your licensed icon set).
+        </li>
+        <li>
+          <strong>Fonts:</strong>
+          System fonts used for performance; feel free to include licensed web fonts if desired.
+        </li>
+        <li>
+          <strong>Code &amp; Techniques:</strong>
+          CSS animations, Intersection Observer for lazy animations, and accessible modal patterns adapted from public best-practices.
+        </li>
+        <li>
+          <strong>Course Resources:</strong>
+          Some sample data and structure were informed by the BYU-Idaho ITM111 examples (educational use).
+        </li>
+      </ul>
+
+      <p class="note">If you reuse any third-party assets (images, icons, fonts), ensure you follow their licensing and include the precise credit required.</p>
+    </section>
+  </main>
+
+  <!-- Footer (same structure + IDs used on other pages) -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Sefa Tees — <a href="https://youtu.be/your-demo" target="_blank" rel="noopener">Video</a></p>
+      <p id="datetime" class="footer-datetime" aria-live="polite"></p>
+    </div>
+  </footer>
+
+  <!-- Small inline script to guarantee year/datetime and mobile menu work even if main.js is absent -->
+  <script>
+    // Year & live date/time (matches other pages)
+    const yearEl = document.getElementById('year');
+    const datetimeEl = document.getElementById('datetime');
+    yearEl.textContent = new Date().getFullYear();
+    function updateDateTime() {
+      const now = new Date();
+      datetimeEl.textContent = now.toLocaleString();
+    }
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+
+    // Menu toggle (keeps header behavior consistent on small screens)
+    const menuBtn = document.querySelector('.menu-toggle');
+    const nav = document.getElementById('primary-nav');
+    menuBtn?.addEventListener('click', () => {
+      const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+      menuBtn.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
