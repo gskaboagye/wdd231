@@ -19,7 +19,7 @@
     "size": "L",
     "sku": "ST-002",
     "stock": 20,
-    "image": "images/shirts/shirt2.webp",
+    "image": "images/shirts/white.jpg",
     "description": "Minimal logo on chest."
   },
   {
@@ -30,7 +30,7 @@
     "size": "M",
     "sku": "ST-003",
     "stock": 6,
-    "image": "images/shirts/shirt3.webp",
+    "image": "images/shirts/retro.jpg",
     "description": "Bold retro print."
   },
   {
@@ -41,7 +41,7 @@
     "size": "S",
     "sku": "ST-004",
     "stock": 15,
-    "image": "images/shirts/shirt4.webp",
+    "image": "images/shirts/ocean.jpg",
     "description": "Cool blue tones."
   },
   {
@@ -52,7 +52,7 @@
     "size": "L",
     "sku": "ST-005",
     "stock": 8,
-    "image": "images/shirts/shirt5.webp",
+    "image": "images/shirts/forest.jpg",
     "description": "Earthy green tee."
   },
   {
@@ -63,7 +63,7 @@
     "size": "M",
     "sku": "ST-006",
     "stock": 10,
-    "image": "images/shirts/shirt6.webp",
+    "image": "images/shirts/sunset.jpg",
     "description": "Warm colorway."
   },
   {
@@ -74,7 +74,7 @@
     "size": "XL",
     "sku": "ST-007",
     "stock": 18,
-    "image": "images/shirts/shirt7.webp",
+    "image": "images/shirts/grey.jpg",
     "description": "Soft heather fabric."
   },
   {
@@ -85,7 +85,7 @@
     "size": "L",
     "sku": "ST-008",
     "stock": 5,
-    "image": "images/shirts/shirt8.webp",
+    "image": "images/shirts/vintage.jpg",
     "description": "Premium vintage wash."
   },
   {
@@ -96,7 +96,7 @@
     "size": "M",
     "sku": "ST-009",
     "stock": 7,
-    "image": "images/shirts/shirt9.webp",
+    "image": "images/shirts/bluestripe.jpg",
     "description": "Striped design."
   },
   {
@@ -107,7 +107,7 @@
     "size": "S",
     "sku": "ST-010",
     "stock": 22,
-    "image": "images/shirts/shirt10.webp",
+    "image": "images/shirts/minimal.jpg",
     "description": "Clean minimalist style."
   },
   {
@@ -118,7 +118,7 @@
     "size": "M",
     "sku": "ST-011",
     "stock": 4,
-    "image": "images/shirts/shirt11.webp",
+    "image": "images/shirts/print.jpg",
     "description": "Limited run artist print."
   },
   {
@@ -129,7 +129,7 @@
     "size": "L",
     "sku": "ST-012",
     "stock": 11,
-    "image": "images/shirts/shirt12.webp",
+    "image": "images/shirts/navy.jpg",
     "description": "Deep navy tee."
   },
   {
@@ -140,7 +140,7 @@
     "size": "M",
     "sku": "ST-013",
     "stock": 9,
-    "image": "images/shirts/shirt13.webp",
+    "image": "images/shirts/yellow.jpg",
     "description": "Standout color."
   },
   {
@@ -151,7 +151,7 @@
     "size": "L",
     "sku": "ST-014",
     "stock": 6,
-    "image": "images/shirts/shirt14.webp",
+    "image": "images/shirts/olive.jpg",
     "description": "Performance fabric."
   },
   {
@@ -162,7 +162,7 @@
     "size": "XL",
     "sku": "ST-015",
     "stock": 3,
-    "image": "images/shirts/shirt15.webp",
+    "image": "images/shirts/charcoal.jpg",
     "description": "Longline fit, modern cut."
   }
 ]
